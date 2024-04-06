@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>display</title>
+        <style>
+            .display{
+                height: 600px;
+                width: 80%;
+                background-color: rgb(248, 248, 241);
+                border: 2px;
+                margin-right: 5%;
+                margin-left: 5%;
+                margin-top: 5%;
+                border: 5px solid black;
+                padding: 50px;
+            }
+            .display1{
+                display: flex;
+                background-color: yellow;
+                padding: 10px 30px 10px 30px;
+                width: 70%;
+                border-radius: 20px;
+            }
+            .time{
+                padding: 0px 10px;
+                border-radius: 45px;
+                padding: 0px 5px;
+                margin-left: 18px;
+            }
+            .flex1{
+                display: flex;
+            }
+            .flex2{
+                display: flex;
+                justify-content: space-around;
+                width: 70%;
+            }
+            .flex3{
+                margin-top: 30px;
+                width: 68%;
+                display: flex;
+                text-align:center ;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid antiquewhite;
+                padding: 10px;
+                background-color: antiquewhite;
+                border-radius: 35px;
+            }
+           
+            .flex2item{
+                display: flex;
+                
+                background-color: antiquewhite;
+                padding: 10px 45px;
+                border-radius: 20px;
+
+            }
+            .flex2item>p{
+                margin-left: 10px;
+                margin-top: 10px;
+                
+            }
+            .name{
+                margin-left: 30px;
+                width: 28%;
+                border-radius: 20px;
+                background-color: blanchedalmond;
+                padding: 5px;
+            }
+            .name>p{
+                float:right;
+                margin-right:160px;
+            }
+            .name>img{
+                padding-top: 15px;
+                padding-left: 5px;
+            }
+            .slider{
+            height: 5px;
+            background-color: #ccc;
+            border-radius: 5px;
+            appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: #ff4500;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .price span {
+            color: red;
+            margin-right: 10px;
+        }
+
+        .price button {
+            background-color: orange;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="display">
+            <div class="flex1">
+               <div  class="display1">
+                    <h4 style="margin-right: 70px;">Chennai Super Kings (CSK) - Sunrises Hyderabad (SRH)</h4>
+                    <input class="time" type="time">
+                    <input type="week" class="time"> 
+               </div>
+                <div class="name">
+                   <img src="https://icon2.cleanpng.com/20210611/byt/transparent-human-icon-male-icon-office-icon-60c3af61bbbad7.460516031623437153769.jpg" width="42px" height="42px">
+                   <p>Hello Mukesh<br>Welcome.......!</p>
+                </div>
+            </div>
+            <h4 style="color:rgb(0, 0, 0); margin-left: 10px;">123 Results</h6>
+            <div class="flex2">
+                <div class="flex2item">
+                    <h3>2000</h3>
+                    <p>Cheapest<br>Tier 4</p>
+                </div>
+                <div class="flex2item">
+                    <h3>5000</h3>
+                    <p>Economy<br>Tier 3</p>
+                </div>
+                <div class="flex2item">
+                    <h3>10000</h3>
+                    <p>Higher<br>Tier 2</p>
+                </div>
+                <div class="flex2item">
+                    <h3>15000</h3>
+                    <p>premium<br>Tier 1</p>
+                </div>
+            </div>
+            
+            <div class="flex3">
+                <div class="team">
+                    <img src="https://i.pinimg.com/originals/89/8c/af/898caf6470835a616cbdd4517028e4b4.png" width="65px" height="65px">
+                    <p>10:30 AM</p>
+                    <p>Chennai [CSK]</p>
+                    <p>Friday, Apr 5, 2024</p>
+                </div>
+                <div class="team">
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                    <p>Score  Prediction</p>
+                   
+                </div>
+                <div class="team">
+                    <img src="https://i.pinimg.com/originals/b2/2b/5d/b22b5ddf29c04f62295e20e378a51d78.png" width="65px" height="65px">
+                    <p>12:20 AM</p>
+                    <p>Hyderabad [SRH]</p>
+                    <p>Friday, Apr 5, 2024</p>
+                </div>
+                <div class="price">
+                    <span>RS.100 BID</span>
+                    <button>Select</button>
+                </div>
+                
+            </div>
+
+
+
+
+
+
+        </div>
+    </body>
+</html>
