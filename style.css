@@ -1,0 +1,263 @@
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 73% 25%;
+    gap: 25px;
+    width: 80%;
+    background-color: rgb(248, 248, 241);
+    border: 2px;
+    margin: 5% 5% 5% 5%;
+    border: 5px solid black;
+    padding: 50px;
+}
+.maingrid{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 20px;
+    background-color: rgb(87, 19, 205);
+    color: white;
+    border-radius: 12px;
+    transition: all 1s;
+}
+.maingrid>h5{
+    margin-right: 20px;
+    border-radius: 12px;
+    background-color: white;
+    color: rgb(118, 117, 117);
+    text-align: center;
+    padding-top: 6px;
+    transition: all 1s;
+}
+.maingrid>h5:hover{
+    transform: scale(1.02);
+    /* box-shadow: 2px 3px 2px 3px rgb(146, 143, 143); */
+    transition: all 1s;
+}
+.sidegrid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap:  10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    transition: all 1s;
+}
+.sidegrid:hover,.maingrid:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 3px 2px 3px rgb(146, 143, 143);
+    transition: all 1s;
+
+}
+.flex{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    width: 74%;
+    margin-left: -8px;
+}
+.content{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    width: 73%;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s;
+
+}
+.content2{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    width: 73%;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s;
+
+}
+.content3{
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    width: 73%;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s;
+
+}
+.content4{
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    width: 73%;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s;
+
+}
+.content:hover, .content2:hover, .content3:hover, .content4:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 3px 2px 3px rgb(146, 143, 143);
+    transition: all 1s;
+}
+
+.sidegrid2{
+    border-radius: 20px;
+    background-color: white;
+    grid-row: 2;
+    grid-column: 2;
+    grid-row: 2/ span 5;
+    display: grid;
+    padding: 35px;
+}
+.flex2item,.p1{
+    display: flex;
+    color: rgb(87, 19, 205) ;
+    background-color: white;
+    padding: 0px 50px;
+    border-radius: 20px;
+    transition: all 1s;
+
+}
+.p1>p{
+    padding-top: 28px;
+}
+.flex2item>p{
+    padding-top: 13px;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+.flex2item:hover{
+    background-color:rgb(87, 19, 205) ;
+    color: white;
+    padding-top: 14px;
+    margin-left: 6px;
+    margin-top: 13px;
+    transition: all 1s;
+    box-shadow: 2px 3px 2px 3px rgb(146, 143, 143);
+}
+.teamslider{
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(87, 19, 205) ;
+}
+.team>p{
+    color: rgb(81, 81, 131);
+}
+button{
+    width: 150px;
+    background-color: rgb(231, 97, 48);
+    color: white;
+    border: none;
+    padding: 10px; 
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+button:hover{
+    transform: scale(0.9);
+    box-shadow: 2px 1px 2px 1px rgb(146, 143, 143);
+
+}
+.last1:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 2px 3px rgb(146, 143, 143);
+    transition: all 1s;
+}
+.ri-focus-fill{
+    color: rgb(87, 19, 205);
+    position: absolute;
+    margin-top: 0.5%;
+}
+.ri-checkbox-blank-circle-fill{
+    color: rgb(87, 19, 205);
+    position: absolute;
+    margin-top: 0.7%;
+    cursor: pointer;
+}
+.ri-focus-line,.ri-record-circle-line{
+    position: absolute;
+    margin-top: 0.5%;
+}
+.slide>p{
+    font-size: 13px;
+}
+.last1{
+    align-items: center;
+    padding: 0px 50px;
+    background-color: rgb(195, 201, 237);
+    border-radius: 20px;
+    transition: all 1s;
+
+}
+
+ .stops {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(101, 92, 92);
+
+}
+
+.stops input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {             
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+   width: 15px;
+  background-color: #eee;
+}
+
+ .stops:hover {
+   background-color: #ccc;
+ }
+ 
+ .stops input:checked ~ .checkmark {
+   background-color: rgb(87, 19, 205);
+ }
+ 
+ .stops input:checked ~ .checkmark:after {
+   display: block;
+ }
+ 
+ .stops .checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+   left: 4px;
+   top: 2px;
+   width: 4px;
+   height: 8px;
+   border: solid white;
+   border-width: 0 3px 3px 0;
+   transform: rotate(45deg);
+ } 
+ .results{
+    position: absolute;
+    color: rgb(87, 19, 205);
+    margin-top: 87px;
+ }
