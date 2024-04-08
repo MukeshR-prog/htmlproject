@@ -1,172 +1,187 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>display</title>
-        <style>
-            .display{
-                height: 600px;
-                width: 80%;
-                background-color: rgb(248, 248, 241);
-                border: 2px;
-                margin-right: 5%;
-                margin-left: 5%;
-                margin-top: 5%;
-                border: 5px solid black;
-                padding: 50px;
-            }
-            .display1{
-                display: flex;
-                background-color: yellow;
-                padding: 10px 30px 10px 30px;
-                width: 70%;
-                border-radius: 20px;
-            }
-            .time{
-                padding: 0px 10px;
-                border-radius: 45px;
-                padding: 0px 5px;
-                margin-left: 18px;
-            }
-            .flex1{
-                display: flex;
-            }
-            .flex2{
-                display: flex;
-                justify-content: space-around;
-                width: 70%;
-            }
-            .flex3{
-                margin-top: 30px;
-                width: 68%;
-                display: flex;
-                text-align:center ;
-                justify-content: space-between;
-                align-items: center;
-                border: 1px solid antiquewhite;
-                padding: 10px;
-                background-color: antiquewhite;
-                border-radius: 35px;
-            }
-           
-            .flex2item{
-                display: flex;
-                
-                background-color: antiquewhite;
-                padding: 10px 45px;
-                border-radius: 20px;
-
-            }
-            .flex2item>p{
-                margin-left: 10px;
-                margin-top: 10px;
-                
-            }
-            .name{
-                margin-left: 30px;
-                width: 28%;
-                border-radius: 20px;
-                background-color: blanchedalmond;
-                padding: 5px;
-            }
-            .name>p{
-                float:right;
-                margin-right:160px;
-            }
-            .name>img{
-                padding-top: 15px;
-                padding-left: 5px;
-            }
-            .slider{
-            height: 5px;
-            background-color: #ccc;
-            border-radius: 5px;
-            appearance: none;
-        }
-
-        input[type="range"]::-webkit-slider-thumb {
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            background-color: #ff4500;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        .price span {
-            color: red;
-            margin-right: 10px;
-        }
-
-        .price button {
-            background-color: orange;
-            color: white;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        </style>
+        <title>display1</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link  rel="stylesheet"  href="profile.css">
     </head>
     <body>
-        <div class="display">
-            <div class="flex1">
-               <div  class="display1">
-                    <h4 style="margin-right: 70px;">Chennai Super Kings (CSK) - Sunrises Hyderabad (SRH)</h4>
-                    <input class="time" type="time">
-                    <input type="week" class="time"> 
-               </div>
-                <div class="name">
-                   <img src="https://icon2.cleanpng.com/20210611/byt/transparent-human-icon-male-icon-office-icon-60c3af61bbbad7.460516031623437153769.jpg" width="42px" height="42px">
-                   <p>Hello Mukesh<br>Welcome.......!</p>
-                </div>
+        <div class="container">
+            <div class="maingrid">
+                <h4>Chennai (CSK) - Mumbai (MI)<br><span style="font-size: 11px; color: white;">1 adult Economy</span></h4>
+                <h5>📅 Thursday, Apr 21</h5>
+                <h5>📅 One Way</h5> 
             </div>
-            <h4 style="color:rgb(0, 0, 0); margin-left: 10px;">123 Results</h6>
-            <div class="flex2">
+            <div class="sidegrid">
+                <img style="padding-left: 20px;" src="https://tricky-photoshop.com/wp-content/uploads/2017/08/final-1.png" width="45px" height="45px">
+                <p>Hello ,<br><b>Benjamin Rous</b></p>
+                <h1>:</h1>
+            </div>
+            <h5 class="results">183 Results</h5>
+            <div class="flex">
                 <div class="flex2item">
-                    <h3>2000</h3>
+                    <h6>$</h6>
+                    <h1>34</h1>
                     <p>Cheapest<br>Tier 4</p>
                 </div>
                 <div class="flex2item">
-                    <h3>5000</h3>
+                    <h6>$</h6>
+                    <h1>56</h1>
                     <p>Economy<br>Tier 3</p>
                 </div>
                 <div class="flex2item">
-                    <h3>10000</h3>
+                    <h6>$</h6>
+                    <h1>80</h1>
                     <p>Higher<br>Tier 2</p>
                 </div>
                 <div class="flex2item">
-                    <h3>15000</h3>
-                    <p>premium<br>Tier 1</p>
+                    <h6>$</h6>
+                    <h1>93</h1>
+                    <p>Premium<br>Tier 1</p>
                 </div>
             </div>
-            
-            <div class="flex3">
+            <div class="sidegrid2">
+                <div class="last1">
+                <h4>Get price Alerts</h4>
+               </div>
+            <div class="last2">
+                <h4>Stops</h4>
+                      <label class="stops">Non stop&emsp;&emsp;&emsp;&emsp;&emsp;$34
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="stops">1 stop&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;$70
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="stops">2 stop&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;$90
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+            </div>
+            <div class="last3">
+                <h4>Depature Timing</h4>
+                <h5>11.00 AM to 11.00 PM</h5>
+                <p>_________<i class="ri-checkbox-blank-circle-fill"></i><span style="color: rgb(40, 38, 38); font-weight: bolder; font-size: 18px;">_____________</span><i class="ri-checkbox-blank-circle-fill"></i>___</p>
+            </div>
+            <div class="last4">
+                <h4>Trip Duration</h4>
+                <h5>2 hours to 12 hours</h5>
+                <p>____________<i class="ri-checkbox-blank-circle-fill"></i>_____________</p>
+            </div>
+            <div class="last5">
+                <h4>Boggage</h4>
+                      <label class="stops">1 smal bag &emsp;&emsp;&emsp;&emsp;&emsp;$34
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="stops">2 combine bag &emsp;&emsp;&nbsp;&emsp; $54
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="stops">checked-in bag &emsp;&emsp;&emsp;&nbsp;$70
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+            </div>
+            <div class="last6">
+                <h4>Airports</h4>
+                      <label class="stops">CIA&emsp;&emsp;&emsp;&emsp;&emsp; Mumbai Air
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="stops">LCO&emsp;&emsp;&emsp;&emsp;&emsp;Chennai Air
+                        <span class="checkmark"></span>
+                      </label>
+                     
+            </div>
+            </div>
+            <div class="content">
+                <img style="text-align: center; margin-left: 15px;" src="https://i.pinimg.com/originals/89/8c/af/898caf6470835a616cbdd4517028e4b4.png" width="62px" height="62px">
                 <div class="team">
-                    <img src="https://i.pinimg.com/originals/89/8c/af/898caf6470835a616cbdd4517028e4b4.png" width="65px" height="65px">
-                    <p>10:30 AM</p>
-                    <p>Chennai [CSK]</p>
-                    <p>Friday, Apr 5, 2024</p>
+                    <p><span class="teamslider">10.30 AM</span><br>Chennai [CSK]<br>Friday, Apr 5, 2024</p>
+                </div>
+                <div class="slide">
+                    <p style="text-align: center;">1h 50m<br><i class="ri-focus-fill"></i>______________________________________________<i class="ri-focus-line"></i><br><br>Non Stop</p>               
                 </div>
                 <div class="team">
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                    <p>Score  Prediction</p>
-                   
-                </div>
-                <div class="team">
-                    <img src="https://i.pinimg.com/originals/b2/2b/5d/b22b5ddf29c04f62295e20e378a51d78.png" width="65px" height="65px">
-                    <p>12:20 AM</p>
-                    <p>Hyderabad [SRH]</p>
-                    <p>Friday, Apr 5, 2024</p>
+                    <p style="text-align: right;"><span class="teamslider">12.20 PM</span><br>Mumbai [MI]<br>Friday, Apr 5, 2024</p>
                 </div>
                 <div class="price">
-                    <span>RS.100 BID</span>
+                    <div class="p1">
+                        <h6>$</h6>
+                        <h1>56</h1>
+                        <p>USD</p>
+                    </div>
                     <button>Select</button>
                 </div>
-                
             </div>
+            <div class="content2">
+                <img style="text-align: center; margin-left: 15px; position: absolute; margin-top: -3%;" src="https://i.pinimg.com/originals/89/8c/af/898caf6470835a616cbdd4517028e4b4.png" width="62px" height="62px">
+                <img style="text-align: center; margin-left: 15px; z-index: 1; padding-left: 20px; margin-left: -0.7%;margin-top: 0.5%; position: absolute;" src="https://totalpng.com//public/uploads/preview/ipl-mumbai-indians-mi-logo-png-transparent-download-finetech-2-11648374661e0lb1wapgc.png" width="75px" height="43px">
 
+                <div class="team">
+                    <p style="margin-left: 95px;"><span class="teamslider">7.45 AM</span><br>Chennai [CSK]<br>Friday, Apr 5, 2024</p>
+                </div>
+                <div class="slide">
+                    <p style="text-align: center;">7h 55m<br><i class="ri-focus-fill"></i>_______________________<i class="ri-record-circle-line"></i>_______________________<i class="ri-focus-line"></i><br><br>&emsp;VLC</p>               
+                </div>
+                <div class="team">
+                    <p style="text-align: right;"><span class="teamslider">3.40 PM</span><br>Mumbai [MI]<br>Friday, Apr 5, 2024</p>
+                </div>
+                <div class="price">
+                    <div class="p1">
+                        <h6>$</h6>
+                        <h1>68</h1>
+                        <p>USD</p>
+                    </div>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div class="content3">
+                <img style="text-align: center; margin-left: 22px; position: absolute; margin-top: -3%;" src="https://lens-storage.storage.googleapis.com/png/626e32a3801a45deaad5bd68e4e16e36" width="40px" height="40px">
+                <img style="text-align: center; margin-left: 15px;  padding-left: 20px; margin-left: -1%;margin-top: 0.5%; position: absolute;" src="https://totalpng.com//public/uploads/preview/ipl-mumbai-indians-mi-logo-png-transparent-download-finetech-2-11648374661e0lb1wapgc.png" width="75px" height="43px">
 
+                <div class="team">
+                    <p style="margin-left: 95px;"><span class="teamslider">10.35 PM</span><br>Delhi [DC]<br>Friday, Apr 5, 2024</p>
+                </div>
+                <div class="slide">
+                    <p style="text-align: center;">12h 15m<br><i class="ri-focus-fill"></i>_____________<i class="ri-record-circle-line"></i>__________________<i class="ri-record-circle-line"></i>_____________<i class="ri-focus-line"></i><br><br>&emsp;MMI&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;VLC</p>               
+                </div>
+                <div class="team">
+                    <p style="text-align: right;"><span class="teamslider">3.50 PM</span><br>Mumbai [MI]<br>Friday, Apr 6, 2024</p>
+                </div>
+                <div class="price">
+                    <div class="p1">
+                        <h6>$</h6>
+                        <h1>82</h1>
+                        <p>USD</p>
+                    </div>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div class="content4">
+                <img style="text-align: center; margin-left: 22px; position: absolute; margin-top: -3%;" src="https://lens-storage.storage.googleapis.com/png/626e32a3801a45deaad5bd68e4e16e36" width="40px" height="40px">
+                <img style="text-align: center; margin-left: 21px; z-index: 1; padding-left: 20px; margin-left: -0.4%;margin-top: 0.5%; position: absolute;" src= "https://i.pinimg.com/originals/b2/2b/5d/b22b5ddf29c04f62295e20e378a51d78.png" width="55px" height="55px">
 
-
-
-
+                <div class="team">
+                    <p style="margin-left: 95px;"><span class="teamslider">9.30 AM</span><br>Delhi [DC]<br>Friday, Apr 5, 2024</p>
+                </div>
+                <div class="slide">
+                    <p style="text-align: center;">23h 15m<br><i class="ri-focus-fill"></i>_____________<i class="ri-record-circle-line"></i>__________________<i class="ri-record-circle-line"></i>_____________<i class="ri-focus-line"></i><br><br>&emsp;CGN&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;KTW</p>               
+                </div>
+                <div class="team">
+                    <p style="text-align: right;"><span class="teamslider">8.45 AM</span><br>Hyderabad [SRH]<br>Friday, Apr 6, 2024</p>
+                </div>
+                <div class="price">
+                    <div class="p1">
+                        <h6>$</h6>
+                        <h1>91</h1>
+                        <p>USD</p>
+                    </div>
+                    <button>Select</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
